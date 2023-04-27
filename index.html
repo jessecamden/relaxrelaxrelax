@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <title>
+            How do you find calm?
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js"></script>
+
+        <style>
+            .row{
+            width:1080px;
+            margin: 0px auto 0px auto ;
+            }
+            .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:80px;  
+            }
+        </style>
+
+        <style>
+            .branwashing-message {
+            vertical-align: center;
+            position: absolute;
+            opacity: 0; 
+
+            animation-name: opacityOn;
+            animation-duration: 15s;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+
+            animation-name: opacityOff;
+            animation-duration: 15s;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+
+            }
+            @keyframes opacityOn {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+            }
+            @keyframes opacityOff {
+            0% {
+            opacity: 1;
+            }
+            100% {
+            opacity: 0;
+            }
+            }
+        </style>
+
+        <style>
+            @keyframes spinning {
+            from { transform: rotate(0deg) }
+            to { transform: rotate(360deg) }
+            }
+            .spin {
+            animation-name: spinning;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            }
+        </style>
+
+        <style>
+            @keyframes fast-spin {
+            from { transform: rotate(0deg) }
+            to { transform: rotate(360deg) }
+            }
+            .fast-spin {
+            animation-name: fast-spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            }
+        </style>
+
+        <style>
+            @keyframes semi-rotate {
+            50% {
+            transform: rotate(180deg);
+            }
+            100% {
+            transform: rotate(0deg);
+            }
+            }
+            .semi-rotate {
+            animation-name: semi-rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            }
+        </style>
+
+        <style>
+            @keyframes wobble {
+            50% {
+            transform: rotate(15deg);
+            }
+            100% {
+            transform: rotate(0deg);
+            }
+            }
+            .wobble {
+            animation-name: wobble;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            }
+        </style>
+
+        <style>
+            @keyframes shake {
+            0% { transform: translate(px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+            .shake {
+            animation: shake 1.5s;
+            animation-iteration-count: infinite;
+            }
+        </style>
+           
+    </head>
+
+    <body style="background-color: rgb(255, 255, 255);">
+
+            <div class="row">
+            <div class="image-container"><img class="anim-object anim-smallcar branwashing-message" src="img/Pop_up.png" height="900" width="900"/>
+                <img src="img/Bong.png" id="Bong" height="200" width="200"
+                    onmouseover= "this.src='img/Bong_text1.png';"
+                    onmouseout= "this.src='img/Bong.png';"
+                    class="semi-rotate"
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Bag.png" id="Bag" height="200" width="200"
+                    onmouseover= "this.src='img/Bag_text1.png';"
+                    onmouseout= "this.src='img/Bag.png';"
+                    class="fast-spin"     
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Pet.png" id="Pet" height="200" width="200"
+                    onmouseover= "this.src='img/Pet_text1.png';"
+                    onmouseout= "this.src='img/Pet.png';"
+                    class="shake"  
+                />
+            </div>
+                       
+        </div>
+ 
+        <div class="row">
+            <div class="image-container">
+                <img src="img/Bonsai.png" id="Bonsai" height="200" width="200"
+                    onmouseover= "this.src='img/Bonsai_text1.png';"
+                    onmouseout= "this.src='img/Bonsai.png';"
+                    class="shake"
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Meditation.png" id="Meditation" height="200" width="200"
+                    onmouseover= "this.src='img/Meditation_text1.png';"
+                    onmouseout= "this.src='img/Meditation.png';"  
+                    class="spin"                   
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Smoke.png" id="Smoke" height="200" width="200"
+                    onmouseover= "this.src='img/Smoke_text1.png';"
+                    onmouseout= "this.src='img/Smoke.png';"
+                    class="wobble"
+                />
+            </div>
+                       
+        </div>
+
+        <div class="row">
+            <div class="image-container">
+                <img src="img/Run.png" id="Run" height="200" width="200"
+                    onmouseover= "this.src='img/Run_text1.png';"
+                    onmouseout= "this.src='img/Run.png';"
+                    class="wobble" 
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Ket.png" id="Ket" height="200" width="200"
+                    onmouseover= "this.src='img/Ket_text1.png';"
+                    onmouseout= "this.src='img/Ket.png';"
+                    class="semi-rotate"                  
+                />
+            </div>
+            
+            <div class="image-container">
+                <img src="img/Zoloft.png" id="Zoloft" height="200" width="200"
+                    onmouseover= "this.src='img/Zoloft_text1.png';"
+                    onmouseout= "this.src='img/Zoloft.png';"
+                    class="fast-spin" 
+                />
+            </div>
+                       
+        </div>
+
+        <script>
+            const sound1 = new buzz.sound ("sound/Bong_hit.mp3")
+            const sound2 = new buzz.sound ("sound/Zip_lock.wav")
+            const sound3 = new buzz.sound ("sound/Vino_baby.wav")
+            const sound4 = new buzz.sound ("sound/Nature.wav")
+            const sound5 = new buzz.sound ("sound/Meditation_bowl.wav")
+            const sound6 = new buzz.sound ("sound/Lighting_cigarette.wav")
+            const sound7 = new buzz.sound ("sound/Breathing_heavy.wav")
+            const sound8 = new buzz.sound ("sound/Snort.wav")
+            const sound9 = new buzz.sound ("sound/Pills_pills_pills.mp3")
+
+            window.onload = () => {
+                document.getElementById ("Bong")
+                .onpointerdown = () => sound1.play ()
+                document.getElementById ("Bag")
+                .onpointerdown = () => sound2.play ()
+                document.getElementById ("Pet")
+                .onpointerdown = () => sound3.play ()
+                document.getElementById ("Bonsai")
+                .onpointerdown = () => sound4.play ()
+                document.getElementById ("Meditation")
+                .onpointerdown = () => sound5.play ()
+                document.getElementById ("Smoke")
+                .onpointerdown = () => sound6.play ()
+                document.getElementById ("Run")
+                .onpointerdown = () => sound7.play ()
+                document.getElementById ("Ket")
+                .onpointerdown = () => sound8.play ()
+                document.getElementById ("Zoloft")
+                .onpointerdown = () => sound9.play ()
+            }
+                               
+        </script>
+        
+    </body>
+
+</html>
